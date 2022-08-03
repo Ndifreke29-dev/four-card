@@ -142,15 +142,16 @@ header {
 
 @media (min-width: 31.3125rem) and (max-width: 31.25rem) {
     .container {
+        height: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        
         grid-template-areas: 
             "h h h"
-            ". t ."
-            "s t c"
-            "s k c"
-            ". k .";
+            "t t t"
+            "s s s"
+            "c c c"
+            "k k k";
     }
 
 }
