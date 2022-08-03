@@ -122,9 +122,16 @@ header {
 
 
 /* Grid Section */
+@media (max-width: 31.25rem) {
+    .container {
+        display: grid;
+    }
+}
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+@media (min-width: 31.3125rem) and (max-width: 31.25rem) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
 
+    }
 }
