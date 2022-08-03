@@ -81,6 +81,8 @@ header {
     border-top: 4px solid rgb(114, 114, 114);
 
     box-shadow: 1px 20px 50px -50px;
+
+    grid-area: h;
 }
 
 .card1 {
@@ -90,6 +92,8 @@ header {
     border-top: 4px solid rgb(11, 216, 243);
 
     box-shadow: 1px 20px 50px -50px;
+
+    grid-area: t;
 }
 .card2 {
     background: rgb(255, 228, 228);
@@ -98,6 +102,8 @@ header {
     border-top: 4px solid rgb(204, 1, 68);
 
     box-shadow: 1px 20px 50px -50px;
+
+    grid-area: ;
 }
 .card3 {
     background: rgb(255, 249, 197);
@@ -121,6 +127,8 @@ header {
 
 
 
+
+
 /* Grid Section */
 @media (max-width: 31.25rem) {
     .container {
@@ -132,6 +140,11 @@ header {
     .container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+            "h h h"
+            ". t ."
+            "";
     }
+
 }
