@@ -82,7 +82,7 @@ header {
 
     box-shadow: 1px 20px 50px -50px;
 
-    grid-area: h;
+    /* grid-area: hd; */
 }
 
 .card1 {
@@ -93,7 +93,7 @@ header {
 
     box-shadow: 1px 20px 50px -50px;
 
-    grid-area: s;
+    /* grid-area: su; */
 }
 .card2 {
     background: rgb(255, 228, 228);
@@ -103,7 +103,7 @@ header {
 
     box-shadow: 1px 20px 50px -50px;
 
-    grid-area: t;
+    /* grid-area: tb; */
 }
 .card3 {
     background: rgb(255, 249, 197);
@@ -113,7 +113,7 @@ header {
 
     box-shadow: 1px 20px 50px -50px;
 
-    grid-area: k;
+    /* grid-area: ka; */
 }
 
 .card4 {
@@ -124,7 +124,7 @@ header {
 
     box-shadow: 1px 20px 50px -50px;
 
-    grid-area: c;
+    /* grid-area: ca; */
 }
 
 
@@ -134,24 +134,46 @@ header {
 
 
 /* Grid Section */
-@media (max-width: 31.25rem) {
+/* @media (max-width: 31.25rem) {
     .container {
         display: grid;
     }
-}
+} */
 
 @media (min-width: 31.3125rem) and (max-width: 31.25rem) {
     .container {
         height: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
         
         grid-template-areas: 
-            "h h h"
-            "t t t"
-            "s s s"
-            "c c c"
-            "k k k";
+            "hd hd hd"
+            ". tb ."
+            "su tb ca"
+            "su ka ca"
+            ". ka .";
     }
+
+    header {
+        grid-area: hd;
+    }
+
+    .card1 {
+        grid-area: su;
+    }
+
+    .card2 {
+        grid-area: tb;
+    }
+
+    .card3 {
+        grid-area: ka;
+    }
+
+    .card4 {
+        grid-area: ca;
+    }
+
 
 }
