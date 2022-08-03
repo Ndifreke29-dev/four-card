@@ -19,7 +19,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 25.75rem;
+    /* max-width: 25.75rem; */
     padding: 1.55rem;
     background: rgba(255, 255, 255, 0.692);
 
@@ -122,3 +122,9 @@ header {
 
 
 /* Grid Section */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
