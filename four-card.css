@@ -47,4 +47,8 @@ p {
     color: rgba(148, 148, 148, 0.836);
 }
 
-.other-p
+.other-p {
+    line-height: 1.65rem;
+    font-size: 0.9rem;
+    color: rgba(148, 148, 148, 0.836);
+}
