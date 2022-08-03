@@ -12,11 +12,14 @@ body {
 
 .container {
     width: 100%;
-    padding: 10px;
+    padding: 1.55rem;
     background: rgba(255, 255, 255, 0.692);
 
     box-shadow: 15px 15px 15px -22px;
-    border-radius: 20px;
+    border-radius: 1.25rem;
+
+    display: grid;
+    gap: 2rem;
 }
 
 
@@ -26,29 +29,68 @@ body {
 h1 {
     font-weight: 200;
     padding-bottom: 0.8125rem;
-    color: rgb(148, 148, 148);
+    color: rgb(0, 0, 0);
 }
 
 h2 {
     font-size: 2.02rem;
     padding-bottom: 1.25rem;
-    color: rgba(17, 17, 17, 0.699);
+    color: rgba(0, 0, 0);
 }
 
 h3 {
     font-size: 1.2rem;
-    padding-bottom: 1.25rem;
-    color: rgba(17, 17, 17, 0.699);
+    padding-bottom: 0.25rem;
+    color: rgba(0, 0, 0);
 }
 
 p {
     line-height: 1.65rem;
     font-size: 1.15rem;
-    color: rgba(148, 148, 148, 0.836);
+    padding-bottom: 1.25rem;
+    color: rgba(0, 0, 0);
 }
 
 .other-p {
     line-height: 1.65rem;
     font-size: 0.9rem;
-    color: rgba(148, 148, 148, 0.836);
+    color: rgba(0, 0, 0);
 }
+
+
+/* ----- Cards Color Section ----- */
+
+header {
+    
+}
+
+.card1 {
+    background: rgba(195, 246, 250, 0.459);
+    border-radius: .45rem;
+    padding: 1.55rem;
+    border-top: 4px solid rgb(11, 216, 243);
+
+    box-shadow: 1px 20px 50px -50px;
+}
+.card2 {
+    background: rgb(255, 228, 228);
+    border-radius: .45rem;
+    padding: 1.55rem;
+    border-top: 4px solid rgb(204, 1, 68);
+
+    box-shadow: 1px 20px 50px -50px;
+}
+.card3,
+.card4 {
+    background: #fff;
+    border-radius: .45rem;
+    padding: 1.55rem;
+
+    box-shadow: 1px 20px 50px -50px;
+}
+
+
+
+
+
+/* Grid Section */
