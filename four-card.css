@@ -7,7 +7,6 @@
 
 body {
     background: rgb(235, 247, 255);
-    padding: 20px;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     overflow: auto;
@@ -85,10 +84,19 @@ header {
 
     text-align: center;
 
+    display: flex;
+    justify-content: center;
+
     grid-area: hd;
 }
 
+.head {
+    width: 100%;
+    max-width: 610px;
+}
+
 .card1 {
+    height: 100%;
     background: rgba(195, 246, 250, 0.459);
     border-radius: .33rem;
     padding: 1.55rem;
@@ -99,6 +107,7 @@ header {
     grid-area: su;
 }
 .card2 {
+    height: 100%;
     background: rgb(255, 228, 228);
     border-radius: .33rem;
     padding: 1.55rem;
@@ -109,6 +118,7 @@ header {
     grid-area: tb;
 }
 .card3 {
+    height: 100%;
     background: rgb(255, 249, 197);
     border-radius: .33rem;
     padding: 1.55rem;
@@ -120,6 +130,7 @@ header {
 }
 
 .card4 {
+    height: 100%;
     background: rgb(238, 238, 238);
     border-radius: .33rem;
     padding: 1.55rem;
@@ -138,17 +149,49 @@ header {
 
 /* Grid Section */
 @media (max-width: 31.25rem) {
+    body {
+        padding: 50px;
+    }
+
     .container {
+        padding: 20px 20px;
+        height: 100%;
         display: grid;
+        grid-template-rows: 1fr .6fr .6fr .6fr .6fr;        
+        
+        grid-template-areas: 
+            "hd"
+            "su"
+            "tb"
+            "ka"
+            "ca";
     }
 }
 
-@media (min-width: 31.3125rem) {
+@media (min-width: 31.26rem) and (max-width: 31.3124) {
     .container {
         height: 100%;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(2, 1fr);        
+        
+        grid-template-areas: 
+            "hd hd"
+            "sb tb"
+            "ka ca";
+    }
+
+}
+
+@media (min-width: 31.3125rem) {
+    body {
+        padding: 50px;
+    }
+
+    .container {
+        padding: 50px 100px;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);        
         
         grid-template-areas: 
             "hd hd hd"
