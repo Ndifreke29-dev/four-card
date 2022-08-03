@@ -11,6 +11,10 @@ body {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     overflow: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
@@ -62,15 +66,26 @@ p {
 }
 
 
+/* ----- Image Section ----- */
+img {
+    float: right;
+}
+
+
 /* ----- Cards Color Section ----- */
 
 header {
-    
+    background: rgb(253, 253, 253);
+    border-radius: .33rem;
+    padding: 1.55rem;
+    border-top: 4px solid rgb(114, 114, 114);
+
+    box-shadow: 1px 20px 50px -50px;
 }
 
 .card1 {
     background: rgba(195, 246, 250, 0.459);
-    border-radius: .45rem;
+    border-radius: .33rem;
     padding: 1.55rem;
     border-top: 4px solid rgb(11, 216, 243);
 
@@ -78,7 +93,7 @@ header {
 }
 .card2 {
     background: rgb(255, 228, 228);
-    border-radius: .45rem;
+    border-radius: .33rem;
     padding: 1.55rem;
     border-top: 4px solid rgb(204, 1, 68);
 
@@ -86,7 +101,7 @@ header {
 }
 .card3 {
     background: rgb(255, 249, 197);
-    border-radius: .45rem;
+    border-radius: .33rem;
     padding: 1.55rem;
     border-top: 4px solid rgb(235, 180, 2);
 
@@ -95,7 +110,7 @@ header {
 
 .card4 {
     background: rgb(238, 238, 238);
-    border-radius: .45rem;
+    border-radius: .33rem;
     padding: 1.55rem;
     border-top: 4px solid rgb(114, 114, 114);
 
