@@ -7,14 +7,44 @@
 body {
     background: rgb(235, 247, 255);
     padding: 20px;
-    font-family: 'roboto flex';
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
     width: 100%;
+    padding: 10px;
     background: rgba(255, 255, 255, 0.692);
 
     box-shadow: 15px 15px 15px -22px;
     border-radius: 20px;
 }
 
+
+
+/* -------- Typography -------- */
+
+h1 {
+    font-weight: 200;
+    padding-bottom: 0.8125rem;
+    color: rgb(148, 148, 148);
+}
+
+h2 {
+    font-size: 2.02rem;
+    padding-bottom: 1.25rem;
+    color: rgba(17, 17, 17, 0.699);
+}
+
+h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1.25rem;
+    color: rgba(17, 17, 17, 0.699);
+}
+
+p {
+    line-height: 1.65rem;
+    font-size: 1.15rem;
+    color: rgba(148, 148, 148, 0.836);
+}
+
+.other-p
