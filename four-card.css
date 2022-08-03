@@ -35,13 +35,14 @@ body {
 /* -------- Typography -------- */
 
 h1 {
+    font-size: 1.72rem;
     font-weight: 200;
     padding-bottom: 0.8125rem;
     color: rgb(0, 0, 0);
 }
 
 h2 {
-    font-size: 2.02rem;
+    font-size: 1.7rem;
     padding-bottom: 1.25rem;
     color: rgba(0, 0, 0);
 }
@@ -82,7 +83,9 @@ header {
 
     box-shadow: 1px 20px 50px -50px;
 
-    /* grid-area: hd; */
+    text-align: center;
+
+    grid-area: hd;
 }
 
 .card1 {
@@ -93,7 +96,7 @@ header {
 
     box-shadow: 1px 20px 50px -50px;
 
-    /* grid-area: su; */
+    grid-area: su;
 }
 .card2 {
     background: rgb(255, 228, 228);
@@ -103,7 +106,7 @@ header {
 
     box-shadow: 1px 20px 50px -50px;
 
-    /* grid-area: tb; */
+    grid-area: tb;
 }
 .card3 {
     background: rgb(255, 249, 197);
@@ -113,7 +116,7 @@ header {
 
     box-shadow: 1px 20px 50px -50px;
 
-    /* grid-area: ka; */
+    grid-area: ka;
 }
 
 .card4 {
@@ -124,7 +127,7 @@ header {
 
     box-shadow: 1px 20px 50px -50px;
 
-    /* grid-area: ca; */
+    grid-area: ca;
 }
 
 
@@ -134,13 +137,13 @@ header {
 
 
 /* Grid Section */
-/* @media (max-width: 31.25rem) {
+@media (max-width: 31.25rem) {
     .container {
         display: grid;
     }
-} */
+}
 
-@media (min-width: 31.3125rem) and (max-width: 31.25rem) {
+@media (min-width: 31.3125rem) {
     .container {
         height: 100%;
         display: grid;
@@ -154,26 +157,7 @@ header {
             "su ka ca"
             ". ka .";
     }
-
-    header {
-        grid-area: hd;
-    }
-
-    .card1 {
-        grid-area: su;
-    }
-
-    .card2 {
-        grid-area: tb;
-    }
-
-    .card3 {
-        grid-area: ka;
-    }
-
-    .card4 {
-        grid-area: ca;
-    }
+    
 
 
 }
