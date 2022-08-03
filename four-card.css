@@ -2,16 +2,20 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow: auto;
 }
 
 body {
     background: rgb(235, 247, 255);
     padding: 20px;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    overflow: auto;
 }
 
 .container {
     width: 100%;
+    max-width: 25.75rem;
     padding: 1.55rem;
     background: rgba(255, 255, 255, 0.692);
 
@@ -80,11 +84,20 @@ header {
 
     box-shadow: 1px 20px 50px -50px;
 }
-.card3,
-.card4 {
-    background: #fff;
+.card3 {
+    background: rgb(255, 249, 197);
     border-radius: .45rem;
     padding: 1.55rem;
+    border-top: 4px solid rgb(235, 180, 2);
+
+    box-shadow: 1px 20px 50px -50px;
+}
+
+.card4 {
+    background: rgb(238, 238, 238);
+    border-radius: .45rem;
+    padding: 1.55rem;
+    border-top: 4px solid rgb(114, 114, 114);
 
     box-shadow: 1px 20px 50px -50px;
 }
