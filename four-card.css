@@ -93,7 +93,7 @@ header {
 
     box-shadow: 1px 20px 50px -50px;
 
-    grid-area: t;
+    grid-area: s;
 }
 .card2 {
     background: rgb(255, 228, 228);
@@ -103,7 +103,7 @@ header {
 
     box-shadow: 1px 20px 50px -50px;
 
-    grid-area: ;
+    grid-area: t;
 }
 .card3 {
     background: rgb(255, 249, 197);
@@ -112,6 +112,8 @@ header {
     border-top: 4px solid rgb(235, 180, 2);
 
     box-shadow: 1px 20px 50px -50px;
+
+    grid-area: k;
 }
 
 .card4 {
@@ -121,6 +123,8 @@ header {
     border-top: 4px solid rgb(114, 114, 114);
 
     box-shadow: 1px 20px 50px -50px;
+
+    grid-area: c;
 }
 
 
@@ -144,7 +148,9 @@ header {
         grid-template-areas: 
             "h h h"
             ". t ."
-            "";
+            "s t c"
+            "s k c"
+            ". k .";
     }
 
 }
